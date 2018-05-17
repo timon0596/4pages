@@ -8,7 +8,7 @@
 .center {
   display: flex;
   height: 100%;
-  width: 50%;
+  width: 70%;
   background-color: #000;
   opacity: 0.5;
   position: fixed; }
@@ -17,9 +17,10 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
   border-left: 2px solid #000;
-  border-right: 2px solid #000; }
+  border-right: 2px solid #000;
+  justify-content: center; }
 
 .menu ul {
   display: flex;
@@ -67,10 +68,44 @@
   line-height: 30px; }
 
 .linecontainer {
-  margin: 100px 0px 20px; }
+  margin: 50px 0px; }
 
 .line {
   display: flex;
   height: 10px;
   width: 100%;
   background-color: #faebd7; }
+
+.text1 {
+  padding: 0px 20px;
+  margin-top: 80px; }
+
+.text1 p {
+  color: #fff;
+  text-align: justify;
+  font-weight: bold;
+  letter-spacing: 7px;
+  line-height: 30px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center; }
+
+img {
+  width: 20%;
+  margin: 20px;
+  margin-bottom: 0px; }
+
+.img2 {
+  float: right; }
+
+.img1 {
+  float: left; }
+
+.img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.img img {
+  height: 20%;
+  margin: 20px; }
