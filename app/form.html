@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/body.css">
+	<link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+	<div class="container">
+		<div class="form">
+			<label>вход</label>
+			<label>регистрация</label>
+			<div class="signin">
+				<form action="page1.html">
+					<input type="email" name="" id="" placeholder="e-mail" required>
+					<input type="password" name="" id="" placeholder="пароль" required>
+					<input type="submit" value="войти">
+				</form>
+				<label for="">забыли пароль?</label>
+			</div>
+			<div class="signup">
+				<form action="page1.html">
+					<input type="text" placeholder="имя" required>
+					<input type="text" placeholder="фамилия" required><br>
+					<select name="" id="">
+						<option value="" selected disabled>страна</option>
+						<option value="">россия</option>
+						<option value="">китай</option>
+						<option value="">япония</option>
+						<option value="">сша</option>
+					</select>
+					<p>пол:</p>
+					<label for="male">мужской</label>
+					<input type="radio" name="gender" id="male">
+					<label for="female">женский</label>
+					<input type="radio" name="gender" id="female"><br>
+					<input type="date" placeholder="дата рождения">
+					<input type="tel" placeholder="номер телефона">
+					<input type="email" name="" id="" placeholder="e-mail">
+					<input type="password" name="" id="" placeholder="пароль" required>
+					<input type="password" name="" id="" placeholder=" повторите пароль" required><br>
+					<input type="checkbox" id="check" checked><label for="check">ознакомлен(-а) и принимаю <a href="#">условия пользовательского соглашения</a></label><br>
+					<input type="submit" value="зарегистрироваться">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

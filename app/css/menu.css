@@ -6,12 +6,19 @@
   width: 100%; }
 
 .center {
+  position: absolute;
   display: flex;
   height: 100%;
   width: 70%;
   background-color: #000;
   opacity: 0.5;
-  position: fixed; }
+  position: fixed;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000; }
+  .center:before {
+    height: 100%;
+    width: 2px;
+    background-color: #000; }
 
 .center2 {
   position: absolute;
