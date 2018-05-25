@@ -6,22 +6,26 @@
 	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/body.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="jquery.js"></script>
 </head>
 <body>
 	<div class="container">
 		<div class="form">
-			<label>вход</label>
-			<label>регистрация</label>
-			<div class="signin">
-				<form action="page1.html">
+			
+				<input type="radio" name="sign" id="enter"><label for="enter" class="tab active" id="tab1">вход</label>
+				<input type="radio" name="sign" id="enter"><label for="enter" class="tab" id="tab2">регистрация</label>
+			
+			
+				<form action="page1.html" class="tabform">
 					<input type="email" name="" id="" placeholder="e-mail" required>
 					<input type="password" name="" id="" placeholder="пароль" required>
 					<input type="submit" value="войти">
 				</form>
-				<label for="">забыли пароль?</label>
-			</div>
-			<div class="signup">
-				<form action="page1.html">
+				<a href="#">забыли пароль?</a>
+			
+			
+				<form action="page1.html" class="tabform">
 					<input type="text" placeholder="имя" required>
 					<input type="text" placeholder="фамилия" required><br>
 					<select name="" id="">
@@ -31,11 +35,14 @@
 						<option value="">япония</option>
 						<option value="">сша</option>
 					</select>
-					<p>пол:</p>
-					<label for="male">мужской</label>
-					<input type="radio" name="gender" id="male">
-					<label for="female">женский</label>
-					<input type="radio" name="gender" id="female"><br>
+					<div class="gen">пол:</div>
+					<div class="gender">
+						
+						<label for="male">мужской</label>
+						<input type="radio" name="gender" id="male" checked>
+						<label for="female">женский</label>
+						<input type="radio" name="gender" id="female">
+					</div>
 					<input type="date" placeholder="дата рождения">
 					<input type="tel" placeholder="номер телефона">
 					<input type="email" name="" id="" placeholder="e-mail">
@@ -44,7 +51,7 @@
 					<input type="checkbox" id="check" checked><label for="check">ознакомлен(-а) и принимаю <a href="#">условия пользовательского соглашения</a></label><br>
 					<input type="submit" value="зарегистрироваться">
 				</form>
-			</div>
+			
 		</div>
 	</div>
 </body>
