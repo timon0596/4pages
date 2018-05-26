@@ -1,49 +1,22 @@
 .container {
-  height: 100%;
-  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  height: 100%;
+  width: 100%; }
 
 .form {
-  background-color: rgba(0, 128, 128, 0.8);
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  min-width: 100px;
-  flex-direction: column;
-  padding: 20px; }
-
-.form input {
+  position: absolute;
+  background-color: #00d27f;
+  min-height: 100px;
+  width: 300px;
   display: block;
-  width: 100%;
-  margin-left: 0px;
-  margin: 1px; }
-
-.gen {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-direction: row;
-  margin-left: 20px; }
-
-select {
-  margin: 5px 0px; }
-
-.tab {
-  outline: 1px solid orange;
-  width: 100%;
-  text-align: center;
-  margin: 2px;
-  padding: 5px; }
-
-input[name="sign"] {
-  display: none; }
+  opacity: 0.8;
+  justify-content: center;
+  margin-top: 300px; }
 
 .label {
   display: -webkit-flex;
@@ -51,15 +24,31 @@ input[name="sign"] {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  width: 100%;
-  justify-content: space-around; }
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1px; }
+  .label label {
+    text-align: center;
+    border: 1px solid orange;
+    width: 100%;
+    margin: 1px;
+    margin-bottom: -1px;
+    padding: 10px 20px; }
 
-.active {
-  background-color: #fff; }
+.sign {
+  display: block;
+  margin: 2px;
+  margin-top: 0px;
+  border: 1px solid orange;
+  border-top: none; }
 
 .tabform {
+  padding: 2px;
   display: none; }
 
-.tabform.active {
+.active {
   display: block;
-  background-color: #fff; }
+  background-color: #00ff83; }
+
+label.tab.active {
+  border-bottom: none; }

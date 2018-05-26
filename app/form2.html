@@ -13,36 +13,47 @@
 	<div class="container">
 		<div class="form">
 			<div class="label">
-				<label class="tab active">label 1</label>
-				<label class="tab">label 2</label>
+				<label for="" class="tab active">sign in</label>
+				<label for="" class="tab">sign up</label>
 			</div>
-			<form action="page1.html" class="tabform active">
-				<input type="email" name="" id="" placeholder="e-mail" required>
-				<input type="password" placeholder="password" name="" id="" required>
-				<a href="#"></a>
-				<input type="submit" name="" id="" value="войти">
-			</form>
-			<form action="page1.html" class="tabform">
-				<input type="email" name="" id="" placeholder="e-mail" required>
-				<input type="password" placeholder="password" name="" id="" required>
-				<input type="text" name="" placeholder="name" id="">
-				<input type="text" name="" placeholder="surname" id="">
-				<div class="gen"><label for="male">male</label><input type="radio" name="gen" id="male" checked>
-				<label for="female">female</label><input type="radio" name="gen" id="female"></div>
-				<select name="" id="">
-					<option value="" selected disabled>country</option>
-					<option value="">rus</option>
-					<option value="">usa</option>
-					<option value="">china</option>
-				</select><br>
-				<label for="">birthday:</label>
-				<input type="date" name="" id="bd">
-				<input type="checkbox" name="" id="" checked required>
-				<label for="">I accept the terms of the <a href="#">user agreement</a></label>
-				<input type="submit" name="" id="" value="зарегистрироваться">
-
-			</form>
-
+			<div class="sign">
+				<form action="page1.html" class="tabform active">
+					<input type="email" name="" id="" placeholder="e-mail" required>
+					<input type="password" name="" id="" placeholder="пароль" required>
+					<input type="submit" value="войти">
+					<br>
+					<a href="#">забыли пароль?</a>
+				</form>
+			
+			
+			
+				<form action="page1.html" class="tabform">
+					<input type="text" placeholder="имя" required>
+					<input type="text" placeholder="фамилия" required><br>
+					<select name="" id="">
+						<option value="" selected disabled>страна</option>
+						<option value="">россия</option>
+						<option value="">китай</option>
+						<option value="">япония</option>
+						<option value="">сша</option>
+					</select>
+					<div class="gen">пол:</div>
+					<div class="gender">
+						
+						<label for="male">мужской</label>
+						<input type="radio" name="gender" id="male" checked>
+						<label for="female">женский</label>
+						<input type="radio" name="gender" id="female">
+					</div>
+					<input type="date" placeholder="дата рождения">
+					<input type="tel" placeholder="номер телефона">
+					<input type="email" name="" id="" placeholder="e-mail">
+					<input type="password" name="" id="" placeholder="пароль" required>
+					<input type="password" name="" id="" placeholder=" повторите пароль" required><br>
+					<input type="checkbox" id="check" checked><label for="check">ознакомлен(-а) и принимаю <a href="#">условия пользовательского соглашения</a></label>
+					<input type="submit" value="зарегистрироваться">
+				</form>
+			</div>
 		</div>
 	</div>
 </body>
